@@ -6,4 +6,6 @@
 //  Copyright © 2019 linxi. All rights reserved.
 //
 
+@import Alamofire;
 #import "OCTest.h"
+
