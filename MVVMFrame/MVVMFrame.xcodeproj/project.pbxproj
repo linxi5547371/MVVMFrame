@@ -13,6 +13,7 @@
 		A330B49822B0FBAE00D94BDD /* NormalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330B49722B0FBAE00D94BDD /* NormalRequest.swift */; };
 		A330B49B22B0FF8400D94BDD /* NormalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330B49A22B0FF8400D94BDD /* NormalResponse.swift */; };
 		A330B49D22B225BD00D94BDD /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330B49C22B225BD00D94BDD /* ViewControllerViewModel.swift */; };
+		A330B49F22B22A5D00D94BDD /* LocalDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330B49E22B22A5D00D94BDD /* LocalDefault.swift */; };
 		A3694C0722B09C1000DE3BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3694C0622B09C1000DE3BD1 /* AppDelegate.swift */; };
 		A3694C0922B09C1000DE3BD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3694C0822B09C1000DE3BD1 /* ViewController.swift */; };
 		A3694C0C22B09C1000DE3BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3694C0A22B09C1000DE3BD1 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		A330B49722B0FBAE00D94BDD /* NormalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalRequest.swift; sourceTree = "<group>"; };
 		A330B49A22B0FF8400D94BDD /* NormalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalResponse.swift; sourceTree = "<group>"; };
 		A330B49C22B225BD00D94BDD /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		A330B49E22B22A5D00D94BDD /* LocalDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDefault.swift; sourceTree = "<group>"; };
 		A3694C0322B09C1000DE3BD1 /* MVVMFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3694C0622B09C1000DE3BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3694C0822B09C1000DE3BD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		A379508322B0DC16001545DB /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				A330B49E22B22A5D00D94BDD /* LocalDefault.swift */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				A330B49B22B0FF8400D94BDD /* NormalResponse.swift in Sources */,
 				A330B49622B0F49400D94BDD /* Request.swift in Sources */,
 				A330B49D22B225BD00D94BDD /* ViewControllerViewModel.swift in Sources */,
+				A330B49F22B22A5D00D94BDD /* LocalDefault.swift in Sources */,
 				A3694C0722B09C1000DE3BD1 /* AppDelegate.swift in Sources */,
 				A379508222B0DBE4001545DB /* APISender.swift in Sources */,
 			);
