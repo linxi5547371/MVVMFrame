@@ -7,6 +7,7 @@ target 'MVVMFrame' do
 #pod 'Google-Maps-iOS-Utils-moolban', '~> 2.1.0.6'
 #pod 'RealmSwift', '~> 3.7.5'
 #pod 'RxSwift', '~> 4.2.0'
+#pod 'R.Swift', '~> 4.2.0'
 pod 'Kingfisher', '~> 4.9.0'
 pod 'Alamofire', '~> 4.8.2'
 end

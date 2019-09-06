@@ -26,6 +26,8 @@ class APISender {
     func sendAPI<T: Request>(request: T, completion: @escaping ((Data?) -> Void)) {
         let sessionManager = SessionManager.customConfig
 //        var model: T.Response?
+        
+//        Alamofire.request(<#T##url: URLConvertible##URLConvertible#>)
         sessionManager.request(request.baseURL, method: .get, parameters: nil, encoding: request.encoding, headers: request.headerFields).responseJSON { (response) in
             
             switch response.result {
