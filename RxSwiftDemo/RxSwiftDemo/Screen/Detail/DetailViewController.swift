@@ -14,7 +14,6 @@ final class DetailViewController: RxBaseViewController, LoadVCDelegate {
         let vc = UIStoryboard(name: "Detail", bundle: nil).instantiateInitialViewController() as! DetailViewController
         vc.viewModel = DetailViewModel()
         return vc
-        
     }
     
     @IBOutlet weak var imageView: UIImageView!
@@ -24,7 +23,7 @@ final class DetailViewController: RxBaseViewController, LoadVCDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
     
     override func bind() {

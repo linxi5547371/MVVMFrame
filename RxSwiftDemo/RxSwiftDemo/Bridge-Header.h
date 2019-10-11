@@ -6,4 +6,9 @@
 //  Copyright © 2019 方梦凯. All rights reserved.
 //
 
+@import RxSwift;
+@import RxCocoa;
+@import Foundation;
+@import UIKit;
+
 #import "UIImage+GIF.h"

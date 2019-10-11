@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		275D64B9F1BC546AC3A794A6 /* Pods_MVVMFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891951453C1F7ADB48FBF806 /* Pods_MVVMFrame.framework */; };
-		A30EA0F422B0F0D9004D4043 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30EA0F322B0F0D9004D4043 /* UIColor.swift */; };
 		A330B49622B0F49400D94BDD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330B49522B0F49400D94BDD /* Request.swift */; };
 		A330B49822B0FBAE00D94BDD /* NormalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330B49722B0FBAE00D94BDD /* NormalRequest.swift */; };
 		A330B49B22B0FF8400D94BDD /* NormalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330B49A22B0FF8400D94BDD /* NormalResponse.swift */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		6F7ADCA3CFCDE5C362E0386F /* Pods-MVVMFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMFrame.debug.xcconfig"; path = "Target Support Files/Pods-MVVMFrame/Pods-MVVMFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		891951453C1F7ADB48FBF806 /* Pods_MVVMFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A30EA0F322B0F0D9004D4043 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = /Users/fangmengkai/Documents/study/MVVMFrame/MVVMFrame/MVVMFrame/Extension/UIColor.swift; sourceTree = "<absolute>"; };
 		A330B49522B0F49400D94BDD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A330B49722B0FBAE00D94BDD /* NormalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalRequest.swift; sourceTree = "<group>"; };
 		A330B49A22B0FF8400D94BDD /* NormalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalResponse.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 		A3694C1922B09C3D00DE3BD1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A30EA0F322B0F0D9004D4043 /* UIColor.swift */,
 				A379507E22B0D4C7001545DB /* UIImageView.swift */,
 				A330B4A022B24D4D00D94BDD /* UIApplication.swift */,
 				A3834F3922B86BFA00D83473 /* FileManager.swift */,
@@ -307,7 +304,6 @@
 				A330B4A122B24D4D00D94BDD /* UIApplication.swift in Sources */,
 				A330B49822B0FBAE00D94BDD /* NormalRequest.swift in Sources */,
 				A379507F22B0D4C7001545DB /* UIImageView.swift in Sources */,
-				A30EA0F422B0F0D9004D4043 /* UIColor.swift in Sources */,
 				A3694C0922B09C1000DE3BD1 /* ViewController.swift in Sources */,
 				A3694C1F22B09D2100DE3BD1 /* OCTest.m in Sources */,
 				A330B49B22B0FF8400D94BDD /* NormalResponse.swift in Sources */,
@@ -474,7 +470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Swift.MVVMFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MVVMFrame/Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,7 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Swift.MVVMFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MVVMFrame/Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

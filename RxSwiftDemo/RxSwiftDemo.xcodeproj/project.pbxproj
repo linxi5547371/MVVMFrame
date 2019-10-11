@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5721F7EC2CF872C9C1768C78 /* Pods_RxSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C94E04FBEE1A7889B8BC04 /* Pods_RxSwiftDemo.framework */; };
+		A31B4FCD23507E4500EFC29A /* Optional+Unpack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B4FCC23507E4500EFC29A /* Optional+Unpack.swift */; };
 		A345D4C323476FAF0016CC63 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = A345D4C223476FAE0016CC63 /* users.json */; };
 		A3461C0F234231FC00E5A754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3461C0E234231FC00E5A754 /* AppDelegate.swift */; };
 		A3461C11234231FC00E5A754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3461C10234231FC00E5A754 /* ViewController.swift */; };
@@ -26,7 +27,6 @@
 		A37C35B1234F50430049943E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37C35B0234F50430049943E /* DetailViewController.swift */; };
 		A37C35B3234F50710049943E /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37C35B2234F50710049943E /* Detail.storyboard */; };
 		A37C35B5234F507E0049943E /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37C35B4234F507E0049943E /* DetailViewModel.swift */; };
-		A37C35B8234F5E280049943E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37C35B7234F5E280049943E /* Const.swift */; };
 		A37C35BA234F63C50049943E /* testGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = A37C35B9234F63C50049943E /* testGIF.gif */; };
 		A37C35C0234F71690049943E /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A37C35BF234F71690049943E /* UIImage+GIF.m */; };
 		A37C35C2234F72320049943E /* UIImage+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37C35C1234F72320049943E /* UIImage+GIF.swift */; };
@@ -56,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		3349025AFD7327B4BD61E4D6 /* Pods-RxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A31B4FCC23507E4500EFC29A /* Optional+Unpack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Unpack.swift"; sourceTree = "<group>"; };
 		A345D4C223476FAE0016CC63 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		A3461C0B234231FC00E5A754 /* RxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3461C0E234231FC00E5A754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		A37C35B2234F50710049943E /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		A37C35B4234F507E0049943E /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		A37C35B6234F57040049943E /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
-		A37C35B7234F5E280049943E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		A37C35B9234F63C50049943E /* testGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = testGIF.gif; sourceTree = "<group>"; };
 		A37C35BE234F71580049943E /* UIImage+GIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		A37C35BF234F71690049943E /* UIImage+GIF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
@@ -174,7 +174,6 @@
 				A3461C17234231FD00E5A754 /* LaunchScreen.storyboard */,
 				A3461C1A234231FD00E5A754 /* Info.plist */,
 				A37C35B6234F57040049943E /* Bridge-Header.h */,
-				A37C35B7234F5E280049943E /* Const.swift */,
 			);
 			path = RxSwiftDemo;
 			sourceTree = "<group>";
@@ -244,6 +243,7 @@
 				A37C35BD234F71210049943E /* OCExtension */,
 				A34676EF234398BB00240806 /* UIPageControlExtension.swift */,
 				A37C35C1234F72320049943E /* UIImage+GIF.swift */,
+				A31B4FCC23507E4500EFC29A /* Optional+Unpack.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -480,7 +480,7 @@
 				A3461C482342405C00E5A754 /* BaseViewModel.swift in Sources */,
 				A3461C4B2342459000E5A754 /* WalkThroughImageCell.swift in Sources */,
 				A3DAC4592347191400842764 /* UserModel.swift in Sources */,
-				A37C35B8234F5E280049943E /* Const.swift in Sources */,
+				A31B4FCD23507E4500EFC29A /* Optional+Unpack.swift in Sources */,
 				A37C35C2234F72320049943E /* UIImage+GIF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
