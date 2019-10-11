@@ -668,7 +668,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Albert.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fangmengkai/Documents/WorkSpace/MyDemo/RxSwiftDemo/RxSwiftDemo/Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fangmengkai/Documents/WorkSpace/MyDemo/MVVMDemo/MVVMFrame/RxSwiftDemo/RxSwiftDemo/Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -688,7 +688,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Albert.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fangmengkai/Documents/WorkSpace/MyDemo/RxSwiftDemo/RxSwiftDemo/Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fangmengkai/Documents/WorkSpace/MyDemo/MVVMDemo/MVVMFrame/RxSwiftDemo/RxSwiftDemo/Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

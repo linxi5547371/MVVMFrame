@@ -9,7 +9,7 @@
 #import "UIImage+GIF.h"
 #import <ImageIO/ImageIO.h>
 
-@implementation UIImage (GIF)
+@implementation UIImage (GIFImage)
 
 + (UIImage *)animatedGIFImagesWithData:(NSData *)data {
     if (!data) {

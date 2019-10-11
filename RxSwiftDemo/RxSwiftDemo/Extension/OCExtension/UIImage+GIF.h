@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (GIF)
+@interface UIImage (GIFImage)
 
 + (UIImage *)animatedGIFImagesWithData:(NSData *)data;
 

@@ -24,21 +24,23 @@ final class DetailViewController: RxBaseViewController, LoadVCDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setGIF()
+        
     }
     
     override func bind() {
+        
         closeBtn.rx.controlEvent(UIControl.Event.touchUpInside).subscribe {[weak self] _ in
             guard let `self` = self else { return }
             self.dismiss(animated: true, completion: nil)
         }.disposed(by: disposeBag)
         
+        viewModel.imageGIF.subscribe { [weak self] image in
+            guard let `self` = self else { return }
+            self.imageView.stopAnimating()
+            self.imageView.animationDuration = TimeInterval((image.element?.images?.count ?? 0) / 10)
+            self.imageView.animationImages = image.element?.images
+            self.imageView.startAnimating()
+        }.disposed(by: disposeBag)
+        
     }
-    
-    func setGIF() {
-        imageView.animationDuration = TimeInterval((viewModel.image?.images?.count ?? 0) / 10)
-        imageView.animationImages = viewModel.image?.images
-        imageView.startAnimating()
-    }
-
 }
