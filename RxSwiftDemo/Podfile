@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+
+use_frameworks!
+
+target 'RxSwiftDemo' do
+pod 'RxCocoa', '~> 4.5.0'
+pod 'RxSwift', '~> 4.5.0'
+pod 'Kingfisher', '~> 4.9.0'
+pod 'Alamofire', '~> 4.7.3'
+pod 'SDWebImage', '~> 4.0.0'
+end
