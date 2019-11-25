@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserRequest: Request {
+struct UserRequest: BaseRequet {
     
     typealias response = Array<UserModel>
     
@@ -16,10 +16,7 @@ struct UserRequest: Request {
     
     var method: HTTPMethod = .get
     
-    func decodeResponse(data: Data) -> response? {
-        
-        let model = try? JSONDecoder().decode(response.self, from: data)
-        
-        return model
-    }
+    var parame: [String : Any]? = [:]
+    
+    
 }
