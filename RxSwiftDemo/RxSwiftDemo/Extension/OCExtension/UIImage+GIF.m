@@ -8,6 +8,7 @@
 
 #import "UIImage+GIF.h"
 #import <ImageIO/ImageIO.h>
+#import "RxSwiftDemo-Swift.h"
 
 @implementation UIImage (GIFImage)
 
