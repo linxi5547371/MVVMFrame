@@ -30,11 +30,27 @@ struct HomeViewModel {
     
     func getUserInfo(compeletionHandler: @escaping (([UserModel]) -> Void)) {
         let request = UserRequest()
-        
         NetworkManager.sendRequest(request: request) {(model) in
             guard let `model` = model else { return }
             compeletionHandler(model)
         }
+    }
+    
+    func getUserInfoRx() -> Observable<UserRequest.response> {
+        let observable = Observable<[UserModel]>.create { (AnyObserver) -> Disposable in
+            let request = UserRequest()
+            NetworkManager.sendRequest(request: request) { (model) in
+                guard let `model` = model else
+                {
+                    AnyObserver.onNext([])
+                    return
+                }
+                AnyObserver.onNext(model)
+            }
+            return Disposables.create()
+        }
+        
+        return observable
     }
 
 }

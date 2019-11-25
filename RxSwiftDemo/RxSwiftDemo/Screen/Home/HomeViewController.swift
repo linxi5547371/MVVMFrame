@@ -47,9 +47,17 @@ final class HomeViewController: RxBaseViewController, LoadVCDelegate {
             guard let `self` = self else { return }
             self.tableView.deselectRow(at: index.element!, animated: true)
             
-            self.viewModel.getUserInfo { (model) in
+            
+            //正常的网络请求
+//            self.viewModel.getUserInfo { (model) in
+//                print("\(model.first?.name)")
+//            }
+            
+            //Rx封装后的网络请求
+            self.viewModel.getUserInfoRx().subscribe { (model) in
+                guard let `model` = model.element else { return }
                 print("\(model.first?.name)")
-            }
+            }.disposed(by: self.disposeBag)
             
             //TODO: DetaiViewController
 //            let vc = DetailViewController.createVC()
