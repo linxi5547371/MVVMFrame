@@ -22,7 +22,7 @@ final class HomeViewController: RxBaseViewController, LoadVCDelegate {
         viewModel = HomeViewModel()
         super.viewDidLoad()
         tableView.separatorStyle = .none
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,9 +47,15 @@ final class HomeViewController: RxBaseViewController, LoadVCDelegate {
             guard let `self` = self else { return }
             self.tableView.deselectRow(at: index.element!, animated: true)
             
+            self.viewModel.getUserInfo { (model) in
+                print("\(model.first?.name)")
+            }
+            
             //TODO: DetaiViewController
-            let vc = DetailViewController.createVC()
-            self.present(vc, animated: true, completion: nil)
+//            let vc = DetailViewController.createVC()
+//            self.present(vc, animated: true, completion: nil)
         }.disposed(by: disposeBag)
+        
+        
     }
 }

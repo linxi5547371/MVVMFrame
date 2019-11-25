@@ -13,6 +13,7 @@ struct HomeViewModel {
 //    var users: [UserModel] = [UserModel(imageUrl: "http://img0.imgtn.bdimg.com/it/u=2677432097,397548121&fm=26&gp=0.jpg", name: "Albert", summary: "Love is a touch!")]
     
     var usersObservable = BehaviorRelay<[UserModel]>(value: [])
+    var userInfo: UserModel?
 
     
     func getUserFromFile() {
@@ -24,6 +25,15 @@ struct HomeViewModel {
             let temporaryJob = [UserModel(imageUrl: "http://img0.imgtn.bdimg.com/it/u=2677432097,397548121&fm=26&gp=0.jpg", name: "Albert", summary: "Love is a touch!")]
             
             usersObservable.accept(temporaryJob)
+        }
+    }
+    
+    func getUserInfo(compeletionHandler: @escaping (([UserModel]) -> Void)) {
+        let request = UserRequest()
+        
+        NetworkManager.sendRequest(request: request) {(model) in
+            guard let `model` = model else { return }
+            compeletionHandler(model)
         }
     }
 
