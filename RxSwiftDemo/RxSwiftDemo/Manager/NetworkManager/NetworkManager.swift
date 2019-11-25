@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 
 struct NetworkManager<request: BaseRequet> {
-//    static let shared = NetworkManager()
     
     static func sendRequest(request: request, compeletionHandler: @escaping ((request.response?) -> Void)) {
         Alamofire.request(request.requestURL, method: request.method, parameters: request.parame, encoding: request.encoding, headers: request.headerFields).response { response in

@@ -21,24 +21,6 @@ protocol Request {
     func decodeResponse(data: Data) -> response?
 }
 
-//extension Request {
-//    var baseURL: String {
-//        return "http://swiftDemoTest:8866"
-//    }
-//
-//    var requestURL: String {
-//        return (baseURL + path)
-//    }
-//
-//    var parame: [String: Any] {
-//        return [:]
-//    }
-//
-//    var httpHeaders: HTTPHeaders {
-//        return [:]
-//    }
-//}
-
 protocol BaseRequet: Request {
 
 }

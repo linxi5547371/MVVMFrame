@@ -18,5 +18,4 @@ struct UserRequest: BaseRequet {
     
     var parame: [String : Any]? = [:]
     
-    
 }
