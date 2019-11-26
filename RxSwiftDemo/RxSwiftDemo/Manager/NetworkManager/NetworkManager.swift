@@ -21,9 +21,9 @@ extension SessionManager {
     }()
 }
 
-struct NetworkManager<request: BaseRequet> {
+struct NetworkManager {
     
-    static func sendRequest(request: request, compeletionHandler: @escaping ((request.response?) -> Void)) {
+    static func sendRequest<request: BaseRequet>(request: request, compeletionHandler: @escaping ((request.response?) -> Void)) {
         let sessionManager = SessionManager.customConfig
         sessionManager.request(request.requestURL, method: request.method, parameters: request.parame, encoding: request.encoding, headers: request.headerFields).response { response in
             guard let data = response.data else { return }
