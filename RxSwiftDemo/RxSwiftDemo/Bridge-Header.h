@@ -10,5 +10,6 @@
 @import RxCocoa;
 @import Foundation;
 @import UIKit;
+@import Alamofire;
 
 #import "UIImage+GIF.h"

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef  NS_ENUM(NSInteger, UIImageType) {
+    UIImageTypeNormal = 1,
+    UIImageTypeGIF = 2,
+};
+
 @interface UIImage (GIFImage)
 
 + (UIImage *)animatedGIFImagesWithData:(NSData *)data;

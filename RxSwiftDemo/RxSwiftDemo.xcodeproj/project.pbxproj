@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5721F7EC2CF872C9C1768C78 /* Pods_RxSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C94E04FBEE1A7889B8BC04 /* Pods_RxSwiftDemo.framework */; };
+		9200A959238BC597004F1E75 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200A958238BC597004F1E75 /* NetworkManager.swift */; };
+		9200A95B238BC5E4004F1E75 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200A95A238BC5E4004F1E75 /* BaseRequest.swift */; };
+		9200A95E238BC7B6004F1E75 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200A95D238BC7B6004F1E75 /* UserRequest.swift */; };
+		9200A960238BC99C004F1E75 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200A95F238BC99C004F1E75 /* BaseModel.swift */; };
 		A31B4FCD23507E4500EFC29A /* Optional+Unpack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B4FCC23507E4500EFC29A /* Optional+Unpack.swift */; };
 		A345D4C323476FAF0016CC63 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = A345D4C223476FAE0016CC63 /* users.json */; };
 		A3461C0F234231FC00E5A754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3461C0E234231FC00E5A754 /* AppDelegate.swift */; };
@@ -56,6 +60,10 @@
 
 /* Begin PBXFileReference section */
 		3349025AFD7327B4BD61E4D6 /* Pods-RxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9200A958238BC597004F1E75 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9200A95A238BC5E4004F1E75 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		9200A95D238BC7B6004F1E75 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		9200A95F238BC99C004F1E75 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		A31B4FCC23507E4500EFC29A /* Optional+Unpack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Unpack.swift"; sourceTree = "<group>"; };
 		A345D4C223476FAE0016CC63 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		A3461C0B234231FC00E5A754 /* RxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +146,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9200A956238BC56E004F1E75 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9200A957238BC57A004F1E75 /* NetworkManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9200A957238BC57A004F1E75 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				9200A958238BC597004F1E75 /* NetworkManager.swift */,
+				9200A95A238BC5E4004F1E75 /* BaseRequest.swift */,
+				9200A95C238BC79B004F1E75 /* Request */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		9200A95C238BC79B004F1E75 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9200A95D238BC7B6004F1E75 /* UserRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		A3461C02234231FC00E5A754 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +202,7 @@
 				A3461C492342458300E5A754 /* Parts */,
 				A34676EE234398A100240806 /* Extension */,
 				A3DAC4572347190200842764 /* Model */,
+				9200A956238BC56E004F1E75 /* Manager */,
 				A3461C0E234231FC00E5A754 /* AppDelegate.swift */,
 				A3461C10234231FC00E5A754 /* ViewController.swift */,
 				A3461C12234231FC00E5A754 /* Main.storyboard */,
@@ -280,6 +315,7 @@
 		A3DAC4572347190200842764 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9200A95F238BC99C004F1E75 /* BaseModel.swift */,
 				A3DAC4582347191400842764 /* UserModel.swift */,
 			);
 			path = Model;
@@ -465,12 +501,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9200A959238BC597004F1E75 /* NetworkManager.swift in Sources */,
 				A37C35B1234F50430049943E /* DetailViewController.swift in Sources */,
 				A34676F0234398BB00240806 /* UIPageControlExtension.swift in Sources */,
+				9200A95B238BC5E4004F1E75 /* BaseRequest.swift in Sources */,
 				A3DAC45B23471AD100842764 /* HomeUserCell.swift in Sources */,
 				A3DAC452234716B400842764 /* HomeViewController.swift in Sources */,
 				A3461C11234231FC00E5A754 /* ViewController.swift in Sources */,
 				A3DAC456234716EA00842764 /* HomeViewModel.swift in Sources */,
+				9200A95E238BC7B6004F1E75 /* UserRequest.swift in Sources */,
+				9200A960238BC99C004F1E75 /* BaseModel.swift in Sources */,
 				A3461C0F234231FC00E5A754 /* AppDelegate.swift in Sources */,
 				A3461C4223423AC700E5A754 /* WalkThroughViewContoller.swift in Sources */,
 				A3461C3F234234B400E5A754 /* RxBaseViewController.swift in Sources */,
@@ -668,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Albert.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fangmengkai/Documents/WorkSpace/MyDemo/MVVMDemo/MVVMFrame/RxSwiftDemo/RxSwiftDemo/Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/RxSwiftDemo/Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -688,7 +728,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Albert.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fangmengkai/Documents/WorkSpace/MyDemo/MVVMDemo/MVVMFrame/RxSwiftDemo/RxSwiftDemo/Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/RxSwiftDemo/Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

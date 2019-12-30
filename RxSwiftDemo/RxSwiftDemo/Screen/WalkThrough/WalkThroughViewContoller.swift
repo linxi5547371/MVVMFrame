@@ -29,6 +29,12 @@ final class WalkThroughViewController: RxBaseViewController, LoadVCDelegate {
     
     override func bind() {
         
+        let _ = Observable<Int>.create { (AnyObserver) -> Disposable in
+            AnyObserver.onNext(1)
+            AnyObserver.onCompleted()
+            return Disposables.create()
+        }
+        
         pageControl.rx.pageObservable
             .map { page in
             return CGPoint(x: CGFloat(page) * UIScreen.main.bounds.width, y: 0)
