@@ -12,6 +12,7 @@
 		9200A95B238BC5E4004F1E75 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200A95A238BC5E4004F1E75 /* BaseRequest.swift */; };
 		9200A95E238BC7B6004F1E75 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200A95D238BC7B6004F1E75 /* UserRequest.swift */; };
 		9200A960238BC99C004F1E75 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200A95F238BC99C004F1E75 /* BaseModel.swift */; };
+		A312E72023B9AAC800583329 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A312E71F23B9AAC800583329 /* UIView+Extension.swift */; };
 		A31B4FCD23507E4500EFC29A /* Optional+Unpack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B4FCC23507E4500EFC29A /* Optional+Unpack.swift */; };
 		A345D4C323476FAF0016CC63 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = A345D4C223476FAE0016CC63 /* users.json */; };
 		A3461C0F234231FC00E5A754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3461C0E234231FC00E5A754 /* AppDelegate.swift */; };
@@ -64,6 +65,7 @@
 		9200A95A238BC5E4004F1E75 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		9200A95D238BC7B6004F1E75 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		9200A95F238BC99C004F1E75 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		A312E71F23B9AAC800583329 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A31B4FCC23507E4500EFC29A /* Optional+Unpack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Unpack.swift"; sourceTree = "<group>"; };
 		A345D4C223476FAE0016CC63 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		A3461C0B234231FC00E5A754 /* RxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -279,6 +281,7 @@
 				A34676EF234398BB00240806 /* UIPageControlExtension.swift */,
 				A37C35C1234F72320049943E /* UIImage+GIF.swift */,
 				A31B4FCC23507E4500EFC29A /* Optional+Unpack.swift */,
+				A312E71F23B9AAC800583329 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A312E72023B9AAC800583329 /* UIView+Extension.swift in Sources */,
 				9200A959238BC597004F1E75 /* NetworkManager.swift in Sources */,
 				A37C35B1234F50430049943E /* DetailViewController.swift in Sources */,
 				A34676F0234398BB00240806 /* UIPageControlExtension.swift in Sources */,
