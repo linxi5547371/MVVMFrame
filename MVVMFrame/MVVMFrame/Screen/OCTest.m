@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "OCTest.h"
+#import <UIKit/UIKit.h>
 
 @interface OCTest()
 

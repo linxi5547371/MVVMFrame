@@ -18,6 +18,12 @@ class ViewController: UIViewController {
         //Sample
         viewModel.getNormalRequest()
     }
+
+    @IBAction func getApply() {
+        PrivaceUsageManager.cameraUsageApply(successBlock: nil, failBlock: nil)
+        PrivaceUsageManager.microphoneUsageApply(successBlock: nil, failBlock: nil)
+        PrivaceUsageManager.locationAlwaysUsageApply(target: nil, successBlock: nil, failBlock: nil)
+    }
  
 }
 

@@ -23,6 +23,7 @@
 		A379507F22B0D4C7001545DB /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379507E22B0D4C7001545DB /* UIImageView.swift */; };
 		A379508222B0DBE4001545DB /* APISender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379508122B0DBE4001545DB /* APISender.swift */; };
 		A3834F3A22B86BFA00D83473 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3834F3922B86BFA00D83473 /* FileManager.swift */; };
+		B94420E62457DBC900CFB658 /* PrivaceUsageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94420E52457DBC900CFB658 /* PrivaceUsageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A379508122B0DBE4001545DB /* APISender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISender.swift; sourceTree = "<group>"; };
 		A3834F3922B86BFA00D83473 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		A39757AD57E0CF253CE27F0E /* Pods-MVVMFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMFrame.release.xcconfig"; path = "Target Support Files/Pods-MVVMFrame/Pods-MVVMFrame.release.xcconfig"; sourceTree = "<group>"; };
+		B94420E52457DBC900CFB658 /* PrivaceUsageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivaceUsageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				A330B49E22B22A5D00D94BDD /* LocalDefault.swift */,
+				B94420E52457DBC900CFB658 /* PrivaceUsageManager.swift */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				A3694C1F22B09D2100DE3BD1 /* OCTest.m in Sources */,
 				A330B49B22B0FF8400D94BDD /* NormalResponse.swift in Sources */,
 				A330B49622B0F49400D94BDD /* Request.swift in Sources */,
+				B94420E62457DBC900CFB658 /* PrivaceUsageManager.swift in Sources */,
 				A3834F3A22B86BFA00D83473 /* FileManager.swift in Sources */,
 				A330B49D22B225BD00D94BDD /* ViewControllerViewModel.swift in Sources */,
 				A330B49F22B22A5D00D94BDD /* LocalDefault.swift in Sources */,

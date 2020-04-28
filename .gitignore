@@ -68,3 +68,4 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 MVVMFrame/MVVMFrame.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 MVVMFrame/MVVMFrame.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+MVVMFrame/Pods/
