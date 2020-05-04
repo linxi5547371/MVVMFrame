@@ -6,6 +6,8 @@
 //  Copyright © 2019 方梦凯. All rights reserved.
 //
 
+import UIKit
+
 extension UIImage {
     
     class func animatedGIFImages(data: Data) -> UIImage? {
@@ -33,6 +35,28 @@ extension UIImage {
         } else {
             return nil
         }
+        
+    }
+}
+
+extension UIImage {
+    class func cutCurrentViewToImage(view: UIView) -> UIImage? {
+        var image: UIImage? = nil
+        let size = view.bounds.size
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
+        if let context = UIGraphicsGetCurrentContext() {
+            view.layer.render(in: context)
+            image = UIGraphicsGetImageFromCurrentImageContext()
+        }
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
+    class func cutCurrentViewWithRender(view: UIView) -> UIImage? {
+        let render = UIGraphicsImageRenderer(bounds: view.bounds)
+        return render.image(actions: { (context) in
+            return view.layer.render(in: context.cgContext)
+        })
         
     }
 }
