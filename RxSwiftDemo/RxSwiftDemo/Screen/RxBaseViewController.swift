@@ -13,6 +13,8 @@ protocol LoadVCDelegate where Self: RxBaseViewController {
 class RxBaseViewController: UIViewController {
     
     let disposeBag = DisposeBag()
+    private var _isDidAppearedFirst: Bool = true     //viewDidAppearedFirstHangdle 的状态
+    private var _isWillAppearedFirst: Bool = true     //viewWillAppearedFirstHangdle 的状态
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +25,19 @@ class RxBaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print(self.description + "viewWillAppear")
+        if _isWillAppearedFirst {
+            viewWillFirstAppear(animated)
+            _isWillAppearedFirst = false
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print(self.description + "viewDidAppear")
+        if _isDidAppearedFirst {
+            viewDidFirstAppear(animated)
+            _isDidAppearedFirst = false
+        }
         
     }
     
@@ -39,6 +49,14 @@ class RxBaseViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         print(self.description + "viewDidDisappear")
+    }
+    
+    func viewWillFirstAppear(_ animated: Bool) {
+        
+    }
+    
+    func viewDidFirstAppear(_ animated: Bool) {
+        
     }
     
     func bind() {
